@@ -1,0 +1,130 @@
+@import '../shared/styles.scss';
+ 
+.app-container {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+   
+    background-image: url('../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.--md {
+        padding-bottom: 100px;
+        background-color: #292929;
+        .top-sub-menu   {
+            padding: 0 60px !important;
+            
+        } 
+        
+    }
+    &.--sm { 
+        background-color: #292929;
+        height: 100%;
+        padding-bottom: 120px;
+        .top-sub-menu   {
+            padding: 0 60px !important;
+        } 
+    }
+    .top-sub-menu {
+        padding: 0 100px;
+        border-bottom: 1px solid rgb(134, 133, 133);
+    }
+    
+    .booking-form {
+        padding: 0 100px;
+        width: 800px;
+
+       
+        mat-tab {
+            width: 200px;
+        }
+        mat-icon {
+            padding-right: 10px;
+        }
+        mat-card {
+            border-radius: 0;
+        }
+    }
+    .main-container {
+        &.--lg {
+            .booking-form {
+                padding: 0 100px;
+            }
+        }
+        &.--md {
+            .booking-form {
+                padding: 0 60px;
+                width: 800px;
+            }
+            .sub-menu {
+                padding: 0 60px;
+            }
+        }
+        &.--sm ,&.--xs  {
+            .booking-form {
+                width: 640px;
+                padding: 0 20px;
+            }
+            
+            .sub-menu, .top-sub-menu   {
+                padding: 0 20px;
+            } 
+        }
+    }
+}
+
+
+
+.sub-menu {
+    padding: 0 100px;
+    margin-top: 40px;
+    .logo {
+        color: #ddd;
+        font-size: 52px;
+    }
+}
+.main-menu {
+    height: 45px;
+   
+    
+    a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+}
+ 
+.social-icons{
+    a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+        border-radius: 3px;
+    }
+    .main {
+        margin: 0 2px;
+        &.active {
+            border: 1px solid rgb(171, 171, 171);
+        }
+        a {
+            text-transform: uppercase;
+            width: 90px;
+            font-size: 12px;
+        } 
+        mat-icon {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+    } 
+}

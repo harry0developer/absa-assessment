@@ -1,0 +1,127 @@
+@import '../../../shared/styles.scss';
+
+.flights-container {
+
+
+    &.--sm, &.--xs {
+        .from-to {
+            mat-form-field {
+                width: 100% !important;
+            }
+        }
+        .depature-return {
+            mat-form-field {
+                width: 100% !important;
+            }
+        }
+    }
+    mat-card {
+        background-color: rgba(255,255,255, 0.9);
+        padding: 60px;
+        
+        mat-label {
+            font-weight: bold;
+            font-size: 16px; 
+            text-transform: uppercase;
+        }
+        .title-info {
+            margin: 20px 0 40px 0;
+        }
+    }
+
+    mat-button-toggle-group {
+        box-shadow: none;
+    }
+
+    .controls {
+        padding-bottom: 20px;
+        button {
+            width: 200px;
+            height: 40px;
+            font-size: 16px;
+        }
+        .search-flights {
+            button {
+                color: white;
+                text-transform: uppercase;
+                background-color: $primary;
+            }
+
+        }
+        .advanced-search {
+            text-transform: uppercase;
+            button {
+                color: $primary;
+                background-color: transparent;
+
+            }
+
+        }
+    }
+
+
+    .from-to {
+        mat-form-field {
+            width: 100% !important;
+        }
+    }
+
+    .depature-return {
+        margin: 20px 0;
+        mat-form-field {
+            width: 225px !important;
+        }
+    }
+
+
+    mat-button-toggle {
+        width: 120px;
+    }
+
+    .mat-button-toggle-checked { 
+        background-color: $primary !important;
+        color: white;
+        font-size: 16px;
+    } 
+}
+
+::ng-deep {
+    mat-card {
+        border-radius: 0 !important;
+    }
+    .mat-form-field-infix {
+        border: 2px solid #ddd;
+        padding: 14px;
+        border-radius: 4px;
+        background: #fff;
+        // width: 300px !important;
+        margin-top: 10px;
+    }
+    /* Styles for tab labels */
+    
+    .mat-tab-label {
+        margin-top: 100px;
+        padding: 5px 10px;
+        font-size: 16px;
+        background-color: $secondary;
+        color: white;
+        font-weight: normal;
+        width: 120px;
+    }
+    
+    /* Styles for the active tab label */
+    .mat-tab-label.mat-tab-label-active {
+        padding: 5px 10px;
+        background-color: $primary;
+        color: white;
+        width: 120px;
+        font-weight: normal;
+    }
+    
+    /* Styles for the ink bar */
+   
+
+    .mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+        display: none !important;
+    }
+}

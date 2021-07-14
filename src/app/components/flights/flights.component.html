@@ -1,0 +1,65 @@
+<mat-card class="flights-container"  [ngClass.lg]="{'--lg': true}" [ngClass.md]="{'--md': true}" [ngClass.sm]="{'--sm': true}" [ngClass.xs]="{'--xs': true}">
+    <div class="title-info"  fxLayout.lt-md="column" fxLayout="row" fxLayoutGap="20px">
+        <div class="left" fxFlex.lt-sm="100" fxFlex="65">
+            <h1 class="title-bold">Booking your flights</h1>
+        </div>
+        <div class="right" fxFlex.lt-sm="100" fxFlex="30"> 
+            <mat-button-toggle-group>
+                <mat-button-toggle value="Domestic">Domestic</mat-button-toggle>
+                <mat-button-toggle value="International">International</mat-button-toggle> 
+            </mat-button-toggle-group>
+        </div>
+    </div>
+
+    <div class="from-to"  fxLayout.lt-md="column" fxLayout="row" fxLayoutGap="20px">
+        <div class="left" fxFlex.lt-sm="100" fxFlex="50">
+            <mat-label>From</mat-label>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fixed">
+                <input matInput placeholder="South Africa">
+            </mat-form-field> 
+        </div>
+        <div class="left" fxFlex.lt-sm="100" fxFlex="50">
+            <mat-label>To</mat-label>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fixed">
+                <input matInput placeholder="Australia">
+            </mat-form-field> 
+        </div>
+    </div>
+
+    <div class="depature-return"  fxLayout.lt-md="column" fxLayout="row" fxLayoutGap="40px">
+        <div class="left">
+            <mat-label>Departure</mat-label>
+            <br>
+            <mat-form-field appearance="fixed">
+                <input matInput  type="date" placeholder="MM/DD/YYYY">
+            </mat-form-field> 
+        </div>
+        <div class="left">
+            <mat-label>Return</mat-label>
+            <br>
+            <mat-form-field appearance="fixed">
+                <input matInput  type="date" placeholder="MM/DD/YYYY">
+            </mat-form-field> 
+        </div>
+        <div class="left">
+            <mat-label>Adults</mat-label>
+            <br>
+            <mat-form-field appearance="fixed">
+                <input matInput type="number" placeholder="2">
+            </mat-form-field> 
+        </div>
+    </div>
+
+    <div class="controls"  fxLayout.lt-md="column" fxLayout="row" fxLayoutGap="40px">
+        <div class="left search-flights" fxFlex.lt-sm="100" fxFlex="70">
+            <button mat-raised-button color="accent">Search Flights</button>
+        </div>
+        <div class="right advanced-search" fxFlex.lt-sm="100" fxFlex="30">
+            <button mat-flat-button> 
+                <i> Advance search</i>
+            </button>
+        </div>
+    </div>
+</mat-card>
